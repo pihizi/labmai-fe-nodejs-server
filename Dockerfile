@@ -5,6 +5,8 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # ADD . /usr/src/app
+ADD init.sh /init.sh
+ENTRYPOINT ["/init.sh"]
 
 EXPOSE 8083
 
