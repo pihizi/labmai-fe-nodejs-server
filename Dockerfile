@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 # ADD . /usr/src/app
 ADD init.sh /init.sh
+RUN chmod 755 /init.sh
 ENTRYPOINT ["/init.sh"]
 
 EXPOSE 8083
