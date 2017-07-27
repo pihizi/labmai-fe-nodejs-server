@@ -7,6 +7,8 @@ WORKDIR /usr/src/app
 # ADD . /usr/src/app
 ADD init.sh /init.sh
 RUN chmod 755 /init.sh
+ADD rebuild.sh /rebuild.sh
+RUN chmod 755 /rebuild.sh
 
 EXPOSE 8083
 
