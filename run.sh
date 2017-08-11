@@ -4,8 +4,8 @@ env=$LABMAI_RUN_ENV
 
 if [ "$env" != "dev" ];
 then
-    npm run start
+    cd /usr/src/app && npm run start
 else
-    npm run dev
+    cd /usr/src/app && npm run dev
 fi
 
