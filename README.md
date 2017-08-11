@@ -10,6 +10,9 @@ fe-nodejs:
   ports:
   - 172.17.0.1:8083:8083/tcp
   restart: always
+  environment:
+  - "LABMAI_RUN_ENV=dev"
+  # - "LABMAI_RUN_ENV=production"
   volumes:
   - /dev/log:/dev/log
   - /data/fe-admin/src:/usr/src/app
