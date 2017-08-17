@@ -11,7 +11,7 @@ fe-nodejs:
   - 172.17.0.1:8083:8083/tcp
   restart: always
   environment:
-  - "LABMAI_RUN_ENV=dev"
+  - "LABMAI_RUN_ENV=test"
   # - "LABMAI_RUN_ENV=production"
   volumes:
   - /dev/log:/dev/log
