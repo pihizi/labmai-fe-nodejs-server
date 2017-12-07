@@ -3,6 +3,8 @@ MAINTAINER pihizi@msn.com
 
 ENV LABMAI_RUN_ENV="production"
 
+RUN npm install pm2 -g
+
 RUN mkdir -p /usr/src/app
 #WORKDIR /usr/src/app
 
