@@ -1,4 +1,4 @@
-FROM node:6-slim
+FROM node:10.15-slim
 MAINTAINER pihizi@msn.com
 
 ENV LABMAI_RUN_ENV="production"
